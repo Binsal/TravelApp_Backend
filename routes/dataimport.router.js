@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 
 const Hotel = require("../model/hotel.model");
 const hotels = require("../data/hotels");
