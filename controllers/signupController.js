@@ -12,7 +12,7 @@ const singupHandler = async (req, res) => {
         });
         const savedUser = await newUser.save();
         res.status(201).json(savedUser);
-    }catch(err){
+    }catch(err){ 
         console.log(err);
         res.status(500).json({ message: "Error creating a user" })
     }
